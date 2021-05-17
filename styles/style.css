@@ -1,0 +1,47 @@
+
+h2, h4 {
+    text-align: center !important;
+}
+
+header {
+    margin-bottom: 50px;
+}
+
+#plx {
+    width: 100%;
+    height: auto;
+}
+
+#flex-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.card {
+    box-shadow: -3px 3px 2px white;
+}
+
+#card1 {
+    width: 500px;
+}
+
+#card2 {
+    width: 450px;
+}
+
+#card1-container, #card2-container {
+    padding: 20px;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    box-shadow: -5px 5px 5px white;
+    margin-top: 30px;
+}
+
+#prev, #rsvp {
+    margin: 15px;
+    padding: 3px;
+}
