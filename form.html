@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Form - Tesla</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/form.css">
+    <script src="./scripts/script.js"></script>
+</head>
+<body class="indigo darken-4">
+    <h1 class="white-text">RSVP Form</h1>
+    <p class="white-text">Please fill this form to watch the Saturday Night Live hosted by the Technoking. In case you don't sign up, we will do it for you. All fields are required except for the last one.</p>
+
+    <form>
+        <label class="white-text" for="name">Full Name</label>
+        <div class="row">
+            <input id="name" class="col s6 m3" type="text" placeholder="John Doe" tabindex="1" required>
+        </div>
+
+        <label class="white-text" for="email">Email ID</label>
+        <div class="row">
+            <input id="email" class="col s6 m3" type="email" placeholder="name@example.com" tabindex="2" required>
+        </div>
+
+        <label class="white-text" for="name">Age (must be at least 0)</label>
+        <div class="row">
+            <input id="age" class="col s6 m3" type="number" placeholder="18" min="0" max="130" tabindex="3" required>
+        </div>
+
+        <label class="white-text" for="questions">Any Questions?</label>
+        <div class="row">
+            <textarea id="questions" class="col s6 m3" placeholder="I wanted to ask..." tabindex="4"></textarea>
+        </div>
+
+        <button class="waves-effect waves-light btn indigo accent-2" id="submitbutton" type="submit" tabindex="5" onclick="store()">Submit</button>
+
+        <div id="submitted" class="white-text"></div>
+    </form>
+
+</body>
+</html>
